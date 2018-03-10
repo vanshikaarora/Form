@@ -1,0 +1,196 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            android:text="Name" />
+        
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name here."
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:inputType="textPersonName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="User ID"/>
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="Enter your user ID here."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="Login Password"/>
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFFFFF"
+            android:hint="Only numeric characters"
+            android:textColor="#FFFFFF"
+            android:inputType="numberPassword"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="Select your current stream"/>
+        <RadioButton android:id="@+id/stream1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Bachelor of technology"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/stream2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Master of Technology"
+            android:onClick="onRadioButtonClicked"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="Select your current year"/>
+        <RadioButton android:id="@+id/year1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="1st Year"
+            android:onClick="onClickedyear"/>
+        <RadioButton android:id="@+id/year2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="2nd Year"
+            android:onClick="onClickedyear"/>
+        <RadioButton android:id="@+id/year3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="3rd Year"
+            android:onClick="onClickedyear"/>
+        <RadioButton android:id="@+id/year4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Final Year"
+            android:onClick="onClickedyear"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="Select your discipline"/>
+        <RadioButton android:id="@+id/branch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Computer Science and Engineering"
+            android:onClick="onClickedbranch"/>
+        <RadioButton android:id="@+id/branch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Mathematics and Computing"
+            android:onClick="onClickedbranch"/>
+        <RadioButton android:id="@+id/branch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Electrical"
+            android:onClick="onClickedbranch"/>
+        <RadioButton android:id="@+id/branch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Mechanical"
+            android:onClick="onClickedbranch"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="Select your learning experiences(at least 2)"/>
+        <CheckBox android:id="@+id/interest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Android development"
+            />
+        <CheckBox android:id="@+id/interest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Web Development"
+            />
+        <CheckBox android:id="@+id/interest3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Machine Learning"
+            android:onClick="onCheckboxclicked"/>
+        <CheckBox android:id="@+id/interest4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Artificial Intelligence"
+            />
+        <CheckBox android:id="@+id/interest5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Cyber Security"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#800000"
+            android:text="Submit"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:onClick="submitorder"/>
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="*It is mandatory to answer all the questions"/>
+    </LinearLayout>
+</ScrollView>
